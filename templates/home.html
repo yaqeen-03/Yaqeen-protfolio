@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <body>
+
+    <title> {{myname}} Projects </title>
+    {% include 'bootstrap.html' %}
+  </head>
+<body>
+  <div class="container">
+  <h1 class="text-center"> {{myname}} Projects </h1> 
+  {% include 'banner.html'%}
+  <h2 class="text-center"> About me </h2>
+  <p> My name is Yaqeen Adnan, and I proudly work with Wybro United Company, where my mission is to efficiently and proficiently operate artificial intelligence systems. This requires a deep understanding of modern technologies and advancements in the field of artificial intelligence, which I constantly strive to achieve.
+    As an artificial intelligence operator, I always seek to improve performance and develop technical solutions that meet and exceed customer expectations. Thanks to my experience and extensive training, I can analyze data with precision, develop innovative machine learning models, and implement performance improvement strategies.
+    My work as an artificial intelligence operator is not just a job; it's a continuous journey of exploration and development. I aim to always be at the forefront of technological advancement and innovation, to achieve maximum benefit and accomplishment in the world of technology.
+</p>
+
+<h2 class="text-center mt-2 mb-4"> Projects </h2>
+<div> 
+  {% for item in myskills %}
+  {% include 'myProjects.html' %}
+    {% endfor %}
+</div>
+  </div>
+<div class="text-center">
+  <a href="/contactme" type="button" class="btn btn-primary">Contact Me</a>
+<p> copy right , {{myname}} <p>
+  </div>
+</body>
+</html>
